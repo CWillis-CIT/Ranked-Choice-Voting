@@ -1,0 +1,17 @@
+User Input:
+
+The program first asks how many total voters there are.
+
+Then, for each voter, you provide a comma-separated list of candidates in ranked order (e.g., "FirstChoice,SecondChoice,ThirdChoice").
+
+Ballot Creation:
+
+Each voter’s ranking is stored in a new Ballot object.
+
+Ranked Choice Election:
+
+After collecting all ballots the array is passed to Election.processElection.
+
+The Election and Candidate classes already implement the RCV logic:
+
+Tally votes based on first-choice preferences, check for a majority, eliminate the lowest candidate, and repeat until a winner is found.
